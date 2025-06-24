@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="">
   <head>
     <meta charset="UTF-8">
@@ -10,4 +10,62 @@
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web IPNU-IPPNU Ranting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Mengatur font Inter secara global */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc; /* Warna latar belakang umum */
+        }
+        /* Warna utama NU */
+        :root {
+            --color-nu-green: #006400; /* Hijau gelap khas NU */
+            --color-nu-light-green: #38761D; /* Hijau yang lebih cerah */
+            --color-white: #ffffff;
+            --color-grey-light: #e2e8f0; /* Abu-abu terang untuk border atau latar belakang elemen */
+            --color-grey-dark: #334155; /* Abu-abu gelap untuk teks */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-nu-light-green);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-nu-green);
+        }
+    </style>
+    <!-- Importmap untuk modul Vue dan Vue Router -->
+    <script type="importmap">
+        {
+            "imports": {
+                "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js",
+                "vue-router": "https://unpkg.com/vue-router@4/dist/vue-router.esm-browser.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <!-- Script utama aplikasi Vue Anda -->
+    <script type="module" src="/src/main.js"></script>
+</body>
 </html>
