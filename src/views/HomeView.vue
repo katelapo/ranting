@@ -2,6 +2,6 @@
 
 <template>
   <main>
-    Rantong Bakalan
+    Ranting Bakalan
   </main>
 </template>
